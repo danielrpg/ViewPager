@@ -15,10 +15,10 @@ import android.widget.TextView;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class FirstFragment extends Fragment {
+public class ThirdFragment extends Fragment {
 
 
-    public FirstFragment() {
+    public ThirdFragment() {
         // Required empty public constructor
     }
 
@@ -26,9 +26,10 @@ public class FirstFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.first_fragment, container, false);
+        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.third_fragment, container, false);
         TextView textView = view.findViewById(R.id.text_main);
-        textView.setText(R.string.first_fragment);
+        textView.setText(R.string.third_fragment);
 
         ImageView imageView = view.findViewById(R.id.img_main);
         imageView.setImageResource(R.mipmap.ic_launcher);
